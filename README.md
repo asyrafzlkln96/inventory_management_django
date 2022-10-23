@@ -17,7 +17,7 @@ to see all inventories (see endpoint below for more info)
 ![image](https://user-images.githubusercontent.com/53460015/197374857-4afad67d-42aa-427c-8ea4-2d6fa65eb530.png)
 
 * /api/inventory/?=name - To query inventory by name. E.g : vans shoes
-![image](https://user-images.githubusercontent.com/53460015/197407321-d6cf0101-2681-4214-b2a0-aafc8247e384.png)
+![image](https://user-images.githubusercontent.com/53460015/197407602-f356023a-6316-40f4-b419-13f3ba3392e2.png)
 
 
 * /inventory/id - To get inventory based on id
