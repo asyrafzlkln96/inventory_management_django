@@ -3,10 +3,10 @@ Author: Asyraf Zulkalnain
 
 ## Pre-requisites :
 
-Make sure you have Django installed. This project uses Django==3.2 . Run pip install -r requirements.txt if you dont have Django installed.
-python manage.py runserver. 
-Open browser and browse to http://localhost:8000/api/inventory
-to see all inventories.
+* Step 1: Make sure you have Django installed. This project uses Django==3.2 . Run pip install -r requirements.txt if you dont have Django installed.
+* Step 2: Run python manage.py runserver in local. 
+* Step 3: Open browser and browse to http://localhost:8000/api/inventory
+to see all inventories (see endpoint below for more info)
 
 ## Endpoints
 * /inventory - To list all inventories in view.
