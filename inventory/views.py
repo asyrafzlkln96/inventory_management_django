@@ -12,20 +12,16 @@ from rest_framework import status
 
 # Create your views here.
 def index(request):
-
 	inventories = Inventory.objects.all()
 	return render(request, "inventory/index.html", {'inventories': inventories})
 
 def get_all_inventories(request):
-
-	inventories = Inventory.objects.all().values()
-	return JsonResponse(data={'Inventory': list(inventories)}, status=status.HTTP_200_OK)
-
-
-def get_filtered_inventories(request, name):
-
-	inventories = Inventory.objects.filter(name=name).values('name', 'supplier', 'availability')
-	return JsonResponse(data={'Inventory': list(inventories)}, status=status.HTTP_200_OK)
+	if request.method == 'GET':
+		queryset = Inventory.objects.all().values()
+		inventory_name = request.GET.get('name', None)
+		if inventory_name is not None:
+			queryset = queryset.filter(name = inventory_name).values('name', 'supplier', 'availability')
+		return JsonResponse(data={'Inventory': list(queryset)}, status=status.HTTP_200_OK)
 
 
 def get_inventory_by_id(request, inventory_id):
