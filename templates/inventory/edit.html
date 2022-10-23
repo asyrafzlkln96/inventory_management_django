@@ -1,0 +1,63 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+    {% load static %}  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+</head>  
+<body>  
+<form method="POST" class="post-form" action="/api/inventory/{{ inventory.id }}/update">  
+        {% csrf_token %}  
+    <div class="container">  
+<br>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <h3>Update Details</h3>  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Inventory Name:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="name" id="inv_name" required maxlength="20" value="{{ inventories.name }}"/>  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Description:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="description" id="inv_desc" required maxlength="100" value="{{ inventories.description }}" />  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Note:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="note" id="inv_note" required maxlength="254" value="{{ inventories.note }}" />  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Stock:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="stock" id="inv_stock" required maxlength="15" value="{{ inventories.stock }}" />  
+    </div>  
+  </div>
+      <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Availability:</label>  
+        <div class="col-sm-4">  
+            <input type="text" name="availability" id="inv_availaibility" value="{{ inventories.availability }}" />  
+        </div>  
+    <div class="form-group row">
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Supplier:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="supplier" id="inv_supplier" value="{{ inventories.supplier }}" />  
+    </div>  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <button type="submit" class="btn btn-success">Update</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+</body>  
+</html>  
