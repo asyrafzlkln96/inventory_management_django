@@ -28,6 +28,12 @@ to see all inventories.
   ![image](https://user-images.githubusercontent.com/53460015/197374953-910d33af-99a8-4def-962b-f64a03f00515.png)
 
   
+ ## Tests
+ Run python manage.py test in order to test the endpoints.
+ ![image](https://user-images.githubusercontent.com/53460015/197375170-9f72ef7b-7b08-421f-9f66-632ecff17873.png)
+
+ 
+ 
   ## Admin
   Admin user: asyraf
   Password: admin123
