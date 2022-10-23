@@ -20,12 +20,13 @@ to see all inventories.
 ![image](https://user-images.githubusercontent.com/53460015/197375098-c6815ab6-211f-4a35-bfdd-6d04c3e44097.png)
 
 
-* /inventory/<id> - To get inventory base on id
-![image](https://user-images.githubusercontent.com/53460015/197374908-b85df554-4876-4337-8eb3-39927396b07f.png)
+* /inventory/<id> - To get inventory based on id
+![image](https://user-images.githubusercontent.com/53460015/197405592-83649384-dc1e-45b4-8348-4313f7ea3572.png)
+
 
 
  * /admin - To access admin panel and view Inventory and Supplier models (CRUD management)
-  ![image](https://user-images.githubusercontent.com/53460015/197374953-910d33af-99a8-4def-962b-f64a03f00515.png)
+ ![image](https://user-images.githubusercontent.com/53460015/197374953-910d33af-99a8-4def-962b-f64a03f00515.png)
 
   
  ## Tests
